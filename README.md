@@ -1,7 +1,7 @@
 # NVIM Settings #
 
 ```
-git clone <url>
+git clone git@github.com:jwvogt/nvim-settings.git
 cp nvim-settings/.nvimrc ~/.nvim
 
 mkdir -p .config/nvim/
