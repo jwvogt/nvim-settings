@@ -83,15 +83,13 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'RRethy/vim-illuminate'
 Plug 'sheerun/vim-polyglot'
 Plug 'ryanoasis/vim-devicons'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 Plug 'preservim/nerdcommenter'
 Plug 'mhinz/vim-startify'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ggandor/leap.nvim'
 
 Plug 'nvim-lua/completion-nvim'
-
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Color Schemes
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
@@ -106,6 +104,7 @@ call plug#end()
 " MAPPINGS --------------------------------------------------------------- {{{
 
 nnoremap <C-b> :NERDTreeToggle %<CR>
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
 " }}}
 
@@ -119,8 +118,7 @@ augroup filetype_vim
     autocmd FileType vim setlocal foldmethod=marker
 augroup END
 
-
-colorscheme tokyonight-night
+colorscheme tokyonight
 
 " }}}
 

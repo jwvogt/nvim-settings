@@ -23,3 +23,6 @@ Open NeoVim with `nvim` and run the following editor commands:
 :source ~/.nvimrc
 :PlugInstall
 ```
+
+
+To update the repo with any changes, run `get_current.sh` to copy your local `.nvimrc` and `.config/nvim/init.vim` to this directory.
