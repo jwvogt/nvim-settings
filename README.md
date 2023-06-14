@@ -1,6 +1,9 @@
 # NeoVim Settings #
 
-First, clone the repo:
+First, install NeoVim if you haven't already. You can follow this guide: https://www.linode.com/docs/guides/how-to-install-neovim-and-plugins-with-vim-plug/ 
+
+
+Clone this repo:
 
 ```
 git clone git@github.com:jwvogt/nvim-settings.git
@@ -25,4 +28,4 @@ Open NeoVim with `nvim` and run the following editor commands:
 ```
 
 
-To update the repo with any changes, run `get_current.sh` to copy your local `.nvimrc` and `.config/nvim/init.vim` to this directory.
+To upload your local changes to the repo, run `get_current.sh` to copy your local `.nvimrc` and `.config/nvim/init.vim` to this directory.
